@@ -183,6 +183,7 @@ int main()
   Timer<Worker1::FPTR,vector<int> > t1(wrk1.getVector(),
   Worker1::job,ioService,5,1);
 
+  //Worked Threads to test timed call backs.
   Worker2<int> wrk2;
   wrk2.setData(1);
   wrk2.setData(2);
